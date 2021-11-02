@@ -1,9 +1,14 @@
 package jcpdev.day1.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import jcpdev.day1.service.MemberService;
 import jcpdev.dto.Member;
 
+@Component
 public class MemberController {
+	@Autowired
 	private MemberService service;
 
 	public MemberController(MemberService service) {
