@@ -6,9 +6,9 @@ import org.springframework.stereotype.Component;
 import jcpdev.day1.dao.MemberDao;
 import jcpdev.dto.Member;
 
-//@Component
+@Component
 public class MemberServiceYourImpl implements MemberService{
-	//@Autowired
+	@Autowired
 	private MemberDao dao;
 
 	public MemberServiceYourImpl(MemberDao dao) {
