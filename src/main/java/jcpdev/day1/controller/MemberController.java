@@ -10,7 +10,7 @@ import jcpdev.dto.Member;
 @Component
 public class MemberController {
 	@Autowired
-	@Qualifier(value="memberServiceMyImpl")
+	@Qualifier(value="memberServiceYourImpl")
 	private MemberService service;
 	
 	public MemberController() {
